@@ -1,4 +1,12 @@
 
 <div class="home-container">
+    <div class="row">
+        <div class="small-12 home-slider"></div>
+    </div>
     <h1>this is the home comp with sass</h1>
+    <div *ngFor="let home of homes">
+        <h1>{{ home.title}}<span> id: {{ home.id }}</span></h1>
+        <p>{{ home.lorem }}</p>
+
+    </div>
 </div>

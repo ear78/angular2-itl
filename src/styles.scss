@@ -1,1 +1,22 @@
 /* You can add global styles to this file, and also import other style files */
+
+/* colors */
+
+$seaGreen: #388a97;
+$darkSeaGreen: #19647E;
+$black: #101010;
+$hoverBlack: #272727;
+$white: #fff;
+$linkHover: #686868;
+
+.active {
+    background: $darkSeaGreen;
+}
+
+ul {
+    margin: 0;
+}
+
+li,ul {
+    list-style-type: none;
+}

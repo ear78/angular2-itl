@@ -1,12 +1,27 @@
-<!--The whole content below can be removed with the new code.-->
 
-<header class="header">
-    <ul class="dropdown menu" data-dropdown-menu>
-        <li><a routerLink="/home">Home</a></li>
-        <li><a routerLink="/products">Products</a></li>
-        <li><a routerLink="/parts-and-service">Parts &amp; Service</a></li>
-        <li><a routerLink="/news">News</a></li>
-        <li><a routerLink="/contact">Contact</a></li>
+
+<header class="row expanded header">
+
+    <ul class="left" data-dropdown-menu>
+        <li><a routerLink="/home" routerLinkActive="active">Home</a></li>
+        <li><a routerLink="/products" routerLinkActive="active">Products</a></li>
+        <li><a routerLink="/parts-and-service" routerLinkActive="active">Parts &amp; Service</a></li>
+        <li><a routerLink="/news" routerLinkActive="active">News</a></li>
+        <li><a routerLink="/contact" routerLinkActive="active">Contact</a></li>
+    </ul>
+    <ul class="menu right">
+            <li>
+                <input type="text" name="" value="" placeholder="Search">
+            </li>
+            <li>
+                <button class="login"><a href="#">Login</a></button>        
+            </li>
+
     </ul>
 </header>
+
 <router-outlet></router-outlet>
+
+<footer class="row footer">
+    <h4>This is some footer text</h4>
+</footer>

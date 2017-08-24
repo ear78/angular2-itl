@@ -1,0 +1,54 @@
+@import '../styles.scss';
+
+
+
+.header {
+    display: flex;
+    align-items: center;
+    height: 50px;
+    background: $black;
+    ul {
+        display: flex;
+    }
+    .left {
+        width: 60%;
+    }
+    .right {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        width: 40%;
+        button {
+            min-width: 90px;
+            border: 1px solid #19647e;
+            border-radius: 25px;
+            padding: 8px;
+            margin: 0 13px;
+            &:hover {
+                background: $white;
+            }
+            a {
+                color: #19647e;
+                &:hover {
+                    background: none;
+                }
+            }
+        }
+        input {
+            width: 300px;
+        }
+    }
+    a {
+        color: $white;
+        padding: 16px;
+        &:hover {
+            background: $hoverBlack;
+        }
+    }
+}
+
+.footer {
+    color: $seaGreen;
+    min-height: 400px;
+    background: $black;
+}
