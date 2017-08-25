@@ -8,9 +8,16 @@ $black: #101010;
 $hoverBlack: #272727;
 $white: #fff;
 $linkHover: #686868;
+$gray: gray;
 
 .active {
-    background: $darkSeaGreen;
+    // background: $darkSeaGreen;
+    color: $gray;
+    text-decoration: none;
+}
+
+html, body {
+    height: 100%;
 }
 
 ul {

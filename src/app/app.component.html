@@ -1,27 +1,69 @@
 
+<!-- HEADER -->
+<header class="container-fluid ">
+    <div class="row header">
+        <ul class="col-sm-7 left">
+            <img src="assets/img/itl_single_logo_classic.svg" alt="ITL logo">
+            <a routerLink="/home" routerLinkActive="active"><li>Home</li>
+            </a>
+            <a routerLink="/products" routerLinkActive="active"><li>Products</li>
+            </a>
+            <a routerLink="/parts-and-service" routerLinkActive="active"><li>Parts &amp; Service</li></a>
+            <a routerLink="/news" routerLinkActive="active"><li>News</li>
+            </a>
+            <a routerLink="/contact" routerLinkActive="active"><li>Contact</li>
+            </a>
+        </ul>
+        <ul class="col-sm-5 right">
+                <li>
+                    <input type="text" name="" value="" placeholder="Search">
+                </li>
+                <li>
+                    <a href="#"><button class="login">Login</button></a>
+                </li>
 
-<header class="row expanded header">
+        </ul>
+    </div>
 
-    <ul class="left" data-dropdown-menu>
-        <li><a routerLink="/home" routerLinkActive="active">Home</a></li>
-        <li><a routerLink="/products" routerLinkActive="active">Products</a></li>
-        <li><a routerLink="/parts-and-service" routerLinkActive="active">Parts &amp; Service</a></li>
-        <li><a routerLink="/news" routerLinkActive="active">News</a></li>
-        <li><a routerLink="/contact" routerLinkActive="active">Contact</a></li>
-    </ul>
-    <ul class="menu right">
-            <li>
-                <input type="text" name="" value="" placeholder="Search">
-            </li>
-            <li>
-                <button class="login"><a href="#">Login</a></button>        
-            </li>
-
-    </ul>
 </header>
 
 <router-outlet></router-outlet>
 
-<footer class="row footer">
-    <h4>This is some footer text</h4>
+<footer class="container-fluid footer">
+    <div class="row">
+        <div class="col-sm-4">
+            <h4>Connect with ITL</h4>
+            <ul>
+                <a href="">
+                    <li>
+                        <i class="fa fa-facebook" aria-hidden="true"></i>
+                    </li>
+                </a>
+                <a href="">
+                    <li>
+                        <i class="fa fa-instagram" aria-hidden="true"></i>
+                    </li>
+                </a>
+                <a href="">
+                    <li>
+                        <i class="fa fa-twitter" aria-hidden="true"></i>
+                    </li>
+                </a>
+                <a href="">
+                    <li>
+                        <i class="fa fa-linkedin" aria-hidden="true"></i>
+                    </li>
+                </a>
+                <a href="">
+                    <li>
+                        <i class="fa fa-google-plus" aria-hidden="true"></i>
+                    </li>
+                </a>
+            </ul>
+        </div>
+        <div class="col-sm-8">
+            right side
+        </div>
+    </div>
+
 </footer>
