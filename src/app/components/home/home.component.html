@@ -6,7 +6,7 @@
     <h1>this is the home comp with sass</h1>
     <div *ngFor="let home of homes">
         <h1>{{ home.title}}<span> id: {{ home.id }}</span></h1>
-        <p>{{ home.lorem }}</p>
-
+        <p>{{ home.info }}</p>
+        <img src="../..{{home.image}}" alt="{{home.title}}">
     </div>
 </div>

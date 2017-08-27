@@ -72,3 +72,21 @@
     background: #101010;
     padding-top: 50px;
 }
+
+.left-footer {
+    color: $white;
+    h4 {
+        text-align: center;
+        font-weight: 100;
+    }
+    ul {
+        display: flex;
+        justify-content: center;
+    }
+    li {
+        margin: 0 6px;
+    }
+    a {
+        color: $white;
+    }
+}

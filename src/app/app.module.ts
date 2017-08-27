@@ -10,6 +10,7 @@ import { PartsAndServiceComponent } from './components/parts-and-service/parts-a
 import { NewsComponent } from './components/news/news.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { MainService } from './services/main.service';
+import { LoginComponent } from './components/login/login.component';
 
 
 @NgModule({
@@ -19,7 +20,8 @@ import { MainService } from './services/main.service';
     ProductsComponent,
     PartsAndServiceComponent,
     NewsComponent,
-    ContactComponent
+    ContactComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
