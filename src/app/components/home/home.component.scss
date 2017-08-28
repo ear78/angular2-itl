@@ -5,8 +5,16 @@ img {
 
 .home-slider {
     background: url('/assets/img/homepage_slider2.jpg');
-    height: 600px;
+    height: 500px;
     background-size: cover;
     background-repeat: no-repeat;
+    margin-bottom: 80px;
+}
 
+.featured-title {
+    margin-bottom: 50px;
+}
+
+.featured-product-title {
+    font-weight: 200;
 }
