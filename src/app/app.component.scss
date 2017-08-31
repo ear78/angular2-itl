@@ -82,12 +82,24 @@
             color: $seaGreen;
         }
         img {
+            display: none;
             position: absolute;
             bottom: 12px;
             left: 10px;
             width: 120px;
         }
     }
+}
+
+@media (min-width: 768px){
+    .footer {
+        .footer-info {
+            img {
+                display: block;
+            }
+        }
+    }
+
 }
 
 .left-footer {
@@ -121,6 +133,16 @@
     .right-footer-columns {
         text-align: center;
     }
+    .footer-drop {
+        display: none;
+    }
+    .footerDrop-active {
+        display: block;
+        background: green;
+        color: yellow;
+        opacity: .8;
+    }
+
     h5 {
         text-transform: uppercase;
     }

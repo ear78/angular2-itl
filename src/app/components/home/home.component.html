@@ -4,14 +4,15 @@
         <div class="small-12 home-slider"></div>
     </div>
     <h1 class="featured-title text-center">Featured Products</h1>
-    <div class="row" *ngFor="let home of homes">
-        <div class="col-xs-12 col-sm-6">
-            <h2 class="featured-product-title">{{ home.title}}</h2>
-            <p>{{ home.info }}</p>
-            <button class="btn btn-primary btn-lg">Learn More</button>
-        </div>
+    <div class="row featured-products-row" *ngFor="let home of homes">
         <div class="col-xs-12 col-sm-6">
             <img src="../..{{home.image}}" alt="{{home.title}}">
         </div>
+        <div class="col-xs-12 col-sm-6">
+            <h2 class="featured-product-title">{{ home.title}}</h2>
+            <p>{{ home.info }}</p>
+            <button class="btn btn-primary">Learn More</button>
+        </div>
+
     </div>
 </div>

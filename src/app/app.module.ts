@@ -11,6 +11,7 @@ import { NewsComponent } from './components/news/news.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { MainService } from './services/main.service';
 import { LoginComponent } from './components/login/login.component';
+import { SlidedownDirective } from './directives/slidedown.directive';
 
 
 @NgModule({
@@ -21,7 +22,8 @@ import { LoginComponent } from './components/login/login.component';
     PartsAndServiceComponent,
     NewsComponent,
     ContactComponent,
-    LoginComponent
+    LoginComponent,
+    SlidedownDirective
   ],
   imports: [
     BrowserModule,
