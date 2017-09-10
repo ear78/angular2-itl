@@ -1,3 +1,5 @@
+@import '../../../styles.scss';
+
 img {
     width: 100%;
     max-width: 450px;
@@ -17,8 +19,52 @@ img {
 
 .featured-products-row {
     padding: 30px 10px;
+    margin-bottom: 50px;
 }
 
 .featured-product-title {
     font-weight: 200;
+}
+
+/* Mid Page Banner Component */
+.mid-page-banner {
+    font-family: 'Montserrat', sans-serif;
+    position: relative;
+    color: $white;
+    margin-bottom: 70px;
+    h2 {
+        font-weight: 400;
+        text-transform: uppercase;
+        margin-bottom: 20px;
+    }
+    .left,
+    .right {
+        height: 260px;
+    }
+    .left {
+        background: gainsboro;
+        background-image: url('../../../assets/img/softwareImg.jpg');
+        background-size: cover;
+        background-position: 50% 50%;
+        background-repeat: no-repeat;
+    }
+    .right {
+
+        padding-top: 20px;
+        background: #2C3E50;
+        background: -webkit-linear-gradient(to right, #4CA1AF, #2C3E50);
+        background: linear-gradient(to right, #4CA1AF, #2C3E50);
+
+    }
+    .link {
+        margin-top: 20px;
+        font-weight: 200;
+        font-style: italic;
+    }
+    .icon {
+        position: absolute;
+        right: 15px;
+        bottom: 15px;
+        width: 15px;
+    }
 }
