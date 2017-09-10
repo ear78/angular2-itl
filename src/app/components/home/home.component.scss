@@ -39,7 +39,7 @@ img {
     }
     .left,
     .right {
-        height: 260px;
+        height: 300px;
     }
     .left {
         background: gainsboro;
@@ -82,11 +82,27 @@ img {
         line-height: 0;
     }
     button {
-        margin-bottom: 20px;
+        margin-bottom: 30px;
     }
     img {
         display: block;
         margin: 0 auto;
         width: 52px;
+    }
+}
+
+/* BOTTOM PAGE BANNER */
+
+.btm-page-banner {
+    background: $lightgray;
+    height: 285px;
+    text-align: center;
+    padding-top: 70px;
+    h2 {
+        font-weight: 400;
+        text-transform: uppercase;
+    }
+    p {
+        font-style: italic;
     }
 }

@@ -9,10 +9,12 @@ $hoverBlack: #272727;
 $white: #fff;
 $linkHover: #686868;
 $gray: gray;
+$lightgray: gainsboro;
 
 
 html, body {
     height: 100%;
+    font-size: 15px;
 }
 
 ul {
@@ -24,8 +26,12 @@ li,ul {
     list-style-type: none;
 }
 
+a {
+    color: $seaGreen;
+}
+
 .btn {
-    padding: 11px 28px;
+    padding: 12px 32px;
     margin-bottom: 0;
     font-size: 12px;
     font-weight: 200;
