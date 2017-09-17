@@ -16,6 +16,7 @@ import { MainService } from './services/main.service';
 import { LoginComponent } from './components/login/login.component';
 import { SlidedownDirective } from './directives/slidedown.directive';
 import { FooterComponent } from './components/footer/footer.component';
+import { HeaderComponent } from './components/header/header.component';
 
 
 @NgModule({
@@ -28,7 +29,8 @@ import { FooterComponent } from './components/footer/footer.component';
     ContactComponent,
     LoginComponent,
     SlidedownDirective,
-    FooterComponent
+    FooterComponent,
+    HeaderComponent
   ],
   imports: [
     BrowserModule,
