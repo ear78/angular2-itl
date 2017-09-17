@@ -10,11 +10,16 @@ $white: #fff;
 $linkHover: #686868;
 $gray: gray;
 $lightgray: gainsboro;
+$montserrat: 'Montserrat', sans-serif;
+$lato: 'Lato', sans-serif;
+$light: 300;
+$extraLight: 200;
 
 
 html, body {
     height: 100%;
     font-size: 15px;
+    font-family: $montserrat;
 }
 
 ul {
@@ -28,6 +33,14 @@ li,ul {
 
 a {
     color: $seaGreen;
+}
+
+h1 {
+    font-weight: $light;
+}
+
+h4 {
+    font-weight: $extraLight;
 }
 
 .btn {
