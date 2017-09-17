@@ -1,0 +1,73 @@
+@import '../../../../styles.scss';
+
+.hero-banner {
+    background: linear-gradient(rgba(0,0,0,.4), rgba(0,0,0,.4)),  url('/assets/img/homepage_slider2.jpg');
+    height: 500px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-bottom: 80px;
+    background-position: 50% 50%;
+    padding-top: 120px;
+    color: white;
+    text-shadow: 4px 2px 4px rgba(0, 0, 0, 0.5);
+    position: relative;
+    h1,h4 {
+        transition: all .2s ease;
+        max-width: 390px;
+    }
+    h1 {
+        // font-weight: $light;
+    }
+    h4 {
+        font-weight: $extraLight;
+    }
+    img {
+        width: 125px;
+        position: absolute;
+        bottom: 15px;
+        right: 15px;
+    }
+}
+
+@media (min-width:640px) {
+    .hero-banner {
+        h1,h4 {
+            max-width: initial;
+            text-align: center;
+        }
+        h1 {
+            font-size: 2.75em;
+        }
+    }
+
+}
+
+@media (min-width: 768px) {
+    .hero-banner {
+        h1 {
+            font-size: 3.4em;
+        }
+    }
+}
+
+@media (min-width: 1024px) {
+    .hero-banner {
+        h1 {
+            font-size: 4em;
+        }
+        h4 {
+            font-size: 1.35em;
+        }
+    }
+}
+
+@media (min-width: 1440px) {
+    .hero-banner {
+        h1 {
+            font-size: 4.5em;
+        }
+        h4 {
+            font-size: 1.45em;
+        }
+    }
+}

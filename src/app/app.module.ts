@@ -17,6 +17,7 @@ import { LoginComponent } from './components/login/login.component';
 import { SlidedownDirective } from './directives/slidedown.directive';
 import { FooterComponent } from './components/footer/footer.component';
 import { HeaderComponent } from './components/header/header.component';
+import { HeroBannerComponent } from './components/home/hero-banner/hero-banner.component';
 
 
 @NgModule({
@@ -30,7 +31,8 @@ import { HeaderComponent } from './components/header/header.component';
     LoginComponent,
     SlidedownDirective,
     FooterComponent,
-    HeaderComponent
+    HeaderComponent,
+    HeroBannerComponent
   ],
   imports: [
     BrowserModule,
