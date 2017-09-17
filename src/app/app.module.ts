@@ -1,5 +1,8 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { AngularFireModule } from 'angularfire2';
+import { AngularFireDatabase } from 'angularfire2/database';
+import { environment } from '../environments/environment';
 import { RouterModule } from '@angular/router';
 import { AppRoutingModule } from './app-routing.module';
 
@@ -27,9 +30,10 @@ import { SlidedownDirective } from './directives/slidedown.directive';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    AngularFireModule.initializeApp(environment.firebase, 'angular-itl')
   ],
-  providers: [MainService],
+  providers: [MainService, AngularFireDatabase],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

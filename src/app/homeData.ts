@@ -18,5 +18,5 @@ export const HOMES: Home[] = [
             title: "ILS-3600 Dual LED Lighting System",
             info: "ITL's new dual LED lighting system includes Infrared LED operation and optional internal monitoring for advanced diagnostics.",
             image: "/assets/img/ILS-3600-000_CLOSED_1_T_1000.png"
-        },
+        }
     ]
