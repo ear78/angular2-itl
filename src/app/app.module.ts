@@ -1,4 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
+import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
 import { NgModule } from '@angular/core';
 import { AngularFireModule } from 'angularfire2';
 import { AngularFireDatabase } from 'angularfire2/database';
@@ -37,6 +38,7 @@ import { HeroBannerComponent } from './components/home/hero-banner/hero-banner.c
   imports: [
     BrowserModule,
     AppRoutingModule,
+    BrowserAnimationsModule,
     AngularFireModule.initializeApp(environment.firebase, 'angular-itl')
   ],
   providers: [MainService, AngularFireDatabase],

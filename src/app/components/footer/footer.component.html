@@ -31,9 +31,9 @@
             </ul>
         </div>
         <div class="col-sm-8 right-footer">
-            <div class="col-sm-4 right-footer-columns" mySlidedown>
-                <h5>About</h5>
-                <ul class="footer-drop">
+            <div class="col-sm-4 right-footer-columns" >
+                <h5 (click)="toggleMenu()">About</h5>
+                <ul [ngClass]="{'drop': isClicked }" class="footer-drop">
                     <li>About ITL</li>
                     <li>Mission</li>
                     <li>Our Team</li>
@@ -42,8 +42,8 @@
                     <li>Careers</li>
                 </ul>
             </div>
-            <div class="col-sm-4 right-footer-columns">
-                <h5 >Services</h5>
+            <div class="col-sm-4 right-footer-columns" >
+                <h5 (click)="toggle()">Services</h5>
                 <ul class="footer-drop">
                     <li>Training</li>
                     <li>Repair Service</li>
@@ -69,5 +69,5 @@
         <img src="/assets/img/itl_logo_footer.svg" alt="ITL logo">
         &copy;2017 <span>Internation Tower Lighting,LLC</span> All Rights Reserved.
     </div>
-
+    <div [@testAnimate]="isAnimate">hello there</div>
 </footer>

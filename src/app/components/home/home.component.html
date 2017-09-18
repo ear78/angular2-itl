@@ -4,7 +4,7 @@
         <app-hero-banner></app-hero-banner>
     </div>
     <h1 class="featured-title text-center">Featured Products</h1>
-    <div class="row featured-products-row" *ngFor="let home of homes">
+    <div class="row featured-products-row" *ngFor="let home of homes; let odd= odd; let even= even;" [ngClass]="{odd: odd, even: even}">
         <div class="col-xs-12 col-sm-6">
             <img src="../..{{home.image}}" alt="{{home.title}}">
         </div>
@@ -14,6 +14,8 @@
             <button class="btn btn-primary">Learn More</button>
         </div>
     </div>
+
+
 
     <!-- MID PAGE BANNER COMPONENT -->
     <div class="row mid-page-banner">

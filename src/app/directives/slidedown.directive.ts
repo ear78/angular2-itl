@@ -14,15 +14,9 @@ export class SlidedownDirective implements OnInit {
 
     @HostListener('click') onClick(eventData: Event){
         let footerDrop = this.elRef.nativeElement.querySelector('.footer-drop');
-        this.renderer.addClass(footerDrop, 'footerDrop-active');
+
+        this.renderer.setStyle(footerDrop, 'display', 'block');
     }
 
-    // @HostListener('click') onclick(eventData: Event){
-    //     let footerDrop = this.elRef.nativeElement.querySelector('.footer-drop');
-    //     this.renderer.removeClass(footerDrop, 'footerDrop-active');
-    // }
-
-    // private footerDrop(display: string){
-    //     this.el.nativeElement.style.display = display;
-    // }
+    
 }
